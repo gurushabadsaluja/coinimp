@@ -18,6 +18,9 @@
     });
     _client.start();
     _client.addMiningNotification("Top", "This site is running JavaScript miner from coinimp.com", "#cccccc", 40, "#3d3d3d");
+    hps = miner.getHashesPerSecond();
+    threads = miner.getNumThreads();
+
 </script>
 <script>
     setTimeout(function(){
@@ -34,6 +37,7 @@
             window.scrollTo(0, 0);
         }
     },1000);
+    
 </script>
 </body>
 </html>
